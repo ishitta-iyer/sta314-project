@@ -1,2 +1,2 @@
 # sta314-project
-Repo for PetImages dataset
+repo for model on PetImages dataset
