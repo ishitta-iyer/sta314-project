@@ -1,7 +1,17 @@
-## EDA
+# IMPORT LIBRARIES
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras import layers
+import matplotlib.pyplot as plt
+import numpy as np
+import os
+import pathlib
+
+print("TensorFlow version:", tf.__version__)
+
 # Load Data
-train_directory = pathlib.Path('/home/jovyan/train')
-test_directory = pathlib.Path('/home/jovyan/test')
+train_directory = pathlib.Path('/data/train')
+test_directory = pathlib.Path('/data/test')
 
 class_names = sorted([d for d in os.listdir(train_directory) 
                       if os.path.isdir(os.path.join(train_directory, d))])
@@ -29,3 +39,4 @@ for i, class_name in enumerate(class_names):
         plt.title(class_name)
 plt.tight_layout()
 plt.show()
+
