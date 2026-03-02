@@ -10,8 +10,8 @@ import pathlib
 print("TensorFlow version:", tf.__version__)
 
 # Load Data
-train_directory = pathlib.Path('/data/train')
-test_directory = pathlib.Path('/data/test')
+train_directory = pathlib.Path('/data/classification-of-pet-facial-expression/train')
+test_directory = pathlib.Path('/data/classification-of-pet-facial-expression/test')
 
 class_names = sorted([d for d in os.listdir(train_directory) 
                       if os.path.isdir(os.path.join(train_directory, d))])
@@ -39,4 +39,5 @@ for i, class_name in enumerate(class_names):
         plt.title(class_name)
 plt.tight_layout()
 plt.show()
+
 
