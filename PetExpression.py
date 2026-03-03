@@ -1,3 +1,7 @@
+from PIL import Image
+from torch.utils.data import Dataset
+
+
 class PetExpressionTrain(Dataset):
     def __init__(self, paths, ctoi, transform=None):
         self.paths = paths
@@ -14,6 +18,8 @@ class PetExpressionTrain(Dataset):
         if self.transform:
             img = self.transform(img)
         return img, y
+
+
 class PetExpressionTest(Dataset):
     def __init__(self, paths, transform=None):
         self.paths = paths
