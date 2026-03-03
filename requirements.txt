@@ -1,0 +1,9 @@
+matplotlib
+numpy
+pandas
+Pillow
+statsmodels
+tensorflow
+torch
+
+# pathlib and Counter are from Python's standard library.
