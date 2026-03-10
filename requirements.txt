@@ -5,5 +5,5 @@ Pillow
 statsmodels
 tensorflow
 torch
-
+scikit-image
 # pathlib and Counter are from Python's standard library.
