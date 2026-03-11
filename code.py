@@ -69,16 +69,6 @@ X_tr, X_val, y_tr, y_val = train_test_split(
 )
 
 
-scaler = StandardScaler()
-X_tr = scaler.fit_transform(X_tr)
-X_val = scaler.transform(X_val)
-
-from sklearn.decomposition import PCA
-
-pca = PCA(n_components=200)
-
-X_tr = pca.fit_transform(X_tr)
-X_val = pca.transform(X_val)
 
 
 model = LogisticRegression(
@@ -116,9 +106,7 @@ for img_name in os.listdir(test_path):
     test_ids.append(img_name)
 
 X_test = np.array(X_test)
-# Apply SAME scaler
-X_test = scaler.transform(X_test)
-X_test = pca.transform(X_test)
+
 
 
 
