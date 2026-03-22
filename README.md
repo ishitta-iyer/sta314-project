@@ -8,6 +8,9 @@ The final and best-performing approach in this repo is the tree-based modeling w
 
 ### Main modeling files
 
+- `combined_code.ipynb`
+  A combined notebook that places the code from the tree-based workflow, logistic regression baseline, and MobileNetV2 workflow into a single file. The notebook is ordered with trees first, followed by logistic regression, then MobileNetV2, and includes markdown cells introducing each model section.
+
 - `ensemble_trees.ipynb`
   The final notebook and strongest model in the repository. This notebook builds the tree-based pipeline, compares feature combinations, and develops the final tree-oriented approach used for the project conclusions.
 
@@ -33,7 +36,6 @@ The final and best-performing approach in this repo is the tree-based modeling w
 
 - `.gitignore`
   Git ignore rules for local machine artifacts.
-
 
 
 
